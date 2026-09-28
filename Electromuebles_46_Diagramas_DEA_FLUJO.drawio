@@ -1,0 +1,557 @@
+<mxfile host="app.diagrams.net" modified="2026-09-28T10:30:00.000Z" agent="GitHub Copilot" version="24.7.17" type="device">
+  <diagram id="cat1_dea1" name="CAT1.1 - DEA SUCURSAL">
+    <mxGraphModel dx="1400" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="900">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="title" value="CATEGORÍA 1: ADMINISTRACIÓN, UBICACIÓN Y SEGURIDAD&#xa;DEA - DIAGRAMA ENTIDAD-ATRIBUTO: SUCURSAL" style="text;html=1;strokeColor=none;fillColor=none;fontSize=16;fontStyle=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="100" y="20" width="1200" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="entity" value="SUCURSAL" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#000000;strokeWidth=3;fillColor=#E1D5E7;fontSize=16;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="550" y="150" width="300" height="80" as="geometry"/>
+        </mxCell>
+        <mxCell id="pk1" value="🔑 id_sucursal\nINT (1001)\n[PK]" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#000000;strokeWidth=2;fillColor=#FFF2CC;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="100" y="300" width="130" height="100" as="geometry"/>
+        </mxCell>
+        <mxCell id="attr1" value="nombre\nVARCHAR(100)\nCentro Norte" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#000000;strokeWidth=2;fillColor=#E2EFDA;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="280" y="300" width="130" height="100" as="geometry"/>
+        </mxCell>
+        <mxCell id="attr2" value="direccion\nVARCHAR(200)\nAv. López 234" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#000000;strokeWidth=2;fillColor=#E2EFDA;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="460" y="300" width="130" height="100" as="geometry"/>
+        </mxCell>
+        <mxCell id="attr3" value="telefono\nVARCHAR(20)\n+593-99-234-5678" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#000000;strokeWidth=2;fillColor=#E2EFDA;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="640" y="300" width="130" height="100" as="geometry"/>
+        </mxCell>
+        <mxCell id="attr4" value="email\nVARCHAR(100)\nsucursal@electro.com" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#000000;strokeWidth=2;fillColor=#E2EFDA;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="820" y="300" width="130" height="100" as="geometry"/>
+        </mxCell>
+        <mxCell id="fk1" value="🔗 id_ciudad\nINT (15)\n[FK]" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#E74C3C;strokeWidth=2;fillColor=#FADBD8;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="1000" y="300" width="130" height="100" as="geometry"/>
+        </mxCell>
+        <mxCell id="attr5" value="estado\nBOOLEAN\nTRUE" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#000000;strokeWidth=2;fillColor=#E2EFDA;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="1180" y="300" width="130" height="100" as="geometry"/>
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="1" source="entity" target="pk1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="1" source="entity" target="attr1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="1" source="entity" target="attr2">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e4" edge="1" parent="1" source="entity" target="attr3">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e5" edge="1" parent="1" source="entity" target="attr4">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e6" edge="1" parent="1" source="entity" target="fk1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e7" edge="1" parent="1" source="entity" target="attr5">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="cat1_dea2" name="CAT1.2 - DEA CIUDAD">
+    <mxGraphModel dx="1400" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="900">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="title" value="CATEGORÍA 1: ADMINISTRACIÓN, UBICACIÓN Y SEGURIDAD&#xa;DEA - DIAGRAMA ENTIDAD-ATRIBUTO: CIUDAD" style="text;html=1;strokeColor=none;fillColor=none;fontSize=16;fontStyle=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="100" y="20" width="1200" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="entity" value="CIUDAD" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#000000;strokeWidth=3;fillColor=#E1D5E7;fontSize=16;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="550" y="150" width="300" height="80" as="geometry"/>
+        </mxCell>
+        <mxCell id="pk1" value="🔑 id_ciudad\nINT (15)\n[PK]" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#000000;strokeWidth=2;fillColor=#FFF2CC;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="200" y="300" width="130" height="100" as="geometry"/>
+        </mxCell>
+        <mxCell id="attr1" value="nombre\nVARCHAR(80)\nQuito" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#000000;strokeWidth=2;fillColor=#E2EFDA;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="380" y="300" width="130" height="100" as="geometry"/>
+        </mxCell>
+        <mxCell id="attr2" value="codigo_postal\nVARCHAR(12)\n170102" style="ellipse;whiteSpace=wrap;html=1;strokeColor:#000000;strokeWidth=2;fillColor=#E2EFDA;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="560" y="300" width="130" height="100" as="geometry"/>
+        </mxCell>
+        <mxCell id="fk1" value="🔗 id_provincia\nINT (3)\n[FK]" style="ellipse;whiteSpace=wrap;html=1;strokeColor:#E74C3C;strokeWidth=2;fillColor:#FADBD8;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="740" y="300" width="130" height="100" as="geometry"/>
+        </mxCell>
+        <mxCell id="attr3" value="estado\nBOOLEAN\nTRUE" style="ellipse;whiteSpace=wrap;html=1;strokeColor:#000000;strokeWidth=2;fillColor=#E2EFDA;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="920" y="300" width="130" height="100" as="geometry"/>
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="1" source="entity" target="pk1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="1" source="entity" target="attr1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="1" source="entity" target="attr2">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e4" edge="1" parent="1" source="entity" target="fk1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e5" edge="1" parent="1" source="entity" target="attr3">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="cat1_dea3" name="CAT1.3 - DEA USUARIO">
+    <mxGraphModel dx="1400" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="900">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="title" value="CATEGORÍA 1: ADMINISTRACIÓN, UBICACIÓN Y SEGURIDAD&#xa;DEA - DIAGRAMA ENTIDAD-ATRIBUTO: USUARIO" style="text;html=1;strokeColor=none;fillColor=none;fontSize=16;fontStyle=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="100" y="20" width="1200" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="entity" value="USUARIO" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#000000;strokeWidth=3;fillColor=#E1D5E7;fontSize=16;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="520" y="150" width="300" height="80" as="geometry"/>
+        </mxCell>
+        <mxCell id="pk1" value="🔑 id_usuario\nINT (5001)\n[PK]" style="ellipse;whiteSpace=wrap;html=1;strokeColor:#000000;strokeWidth=2;fillColor:#FFF2CC;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="50" y="300" width="130" height="100" as="geometry"/>
+        </mxCell>
+        <mxCell id="attr1" value="nombre\nVARCHAR(80)\nMaría" style="ellipse;whiteSpace=wrap;html=1;strokeColor:#000000;strokeWidth=2;fillColor:#E2EFDA;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="210" y="300" width="130" height="100" as="geometry"/>
+        </mxCell>
+        <mxCell id="attr2" value="apellido\nVARCHAR(80)\nPérez" style="ellipse;whiteSpace=wrap;html=1;strokeColor:#000000;strokeWidth=2;fillColor:#E2EFDA;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="370" y="300" width="130" height="100" as="geometry"/>
+        </mxCell>
+        <mxCell id="cand1" value="* username\nVARCHAR(50)\nmperez\n[CANDIDATA]" style="ellipse;whiteSpace=wrap;html=1;strokeColor:#27AE60;strokeWidth=2;fillColor:#D5F4E6;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="530" y="300" width="130" height="100" as="geometry"/>
+        </mxCell>
+        <mxCell id="cand2" value="* email\nVARCHAR(100)\nmperez@electro.com\n[CANDIDATA]" style="ellipse;whiteSpace=wrap;html=1;strokeColor:#27AE60;strokeWidth=2;fillColor:#D5F4E6;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="690" y="300" width="130" height="100" as="geometry"/>
+        </mxCell>
+        <mxCell id="attr3" value="rol\nVARCHAR(30)\nAdministrador" style="ellipse;whiteSpace=wrap;html=1;strokeColor:#000000;strokeWidth=2;fillColor:#E2EFDA;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="850" y="300" width="130" height="100" as="geometry"/>
+        </mxCell>
+        <mxCell id="fk1" value="🔗 id_sucursal\nINT\n[FK]" style="ellipse;whiteSpace=wrap;html=1;strokeColor:#E74C3C;strokeWidth=2;fillColor:#FADBD8;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="1010" y="300" width="130" height="100" as="geometry"/>
+        </mxCell>
+        <mxCell id="attr4" value="estado\nBOOLEAN\nTRUE" style="ellipse;whiteSpace=wrap;html=1;strokeColor:#000000;strokeWidth=2;fillColor:#E2EFDA;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="1170" y="300" width="130" height="100" as="geometry"/>
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="1" source="entity" target="pk1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="1" source="entity" target="attr1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="1" source="entity" target="attr2">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e4" edge="1" parent="1" source="entity" target="cand1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e5" edge="1" parent="1" source="entity" target="cand2">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e6" edge="1" parent="1" source="entity" target="attr3">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e7" edge="1" parent="1" source="entity" target="fk1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e8" edge="1" parent="1" source="entity" target="attr4">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="cat1_dea4" name="CAT1.4 - DEA PROVINCIA">
+    <mxGraphModel dx="1400" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="900">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="title" value="CATEGORÍA 1: ADMINISTRACIÓN, UBICACIÓN Y SEGURIDAD&#xa;DEA - DIAGRAMA ENTIDAD-ATRIBUTO: PROVINCIA" style="text;html=1;strokeColor=none;fillColor=none;fontSize=16;fontStyle=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="100" y="20" width="1200" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="entity" value="PROVINCIA" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#000000;strokeWidth=3;fillColor=#E1D5E7;fontSize=16;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="550" y="150" width="300" height="80" as="geometry"/>
+        </mxCell>
+        <mxCell id="pk1" value="🔑 id_provincia\nINT (3)\n[PK]" style="ellipse;whiteSpace=wrap;html=1;strokeColor:#000000;strokeWidth=2;fillColor:#FFF2CC;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="200" y="300" width="130" height="100" as="geometry"/>
+        </mxCell>
+        <mxCell id="attr1" value="nombre\nVARCHAR(80)\nPichincha" style="ellipse;whiteSpace=wrap;html=1;strokeColor:#000000;strokeWidth=2;fillColor:#E2EFDA;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="380" y="300" width="130" height="100" as="geometry"/>
+        </mxCell>
+        <mxCell id="cand1" value="* codigo\nVARCHAR(10)\nPIN\n[CANDIDATA]" style="ellipse;whiteSpace=wrap;html=1;strokeColor:#27AE60;strokeWidth=2;fillColor:#D5F4E6;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="560" y="300" width="130" height="100" as="geometry"/>
+        </mxCell>
+        <mxCell id="attr2" value="pais\nVARCHAR(50)\nEcuador" style="ellipse;whiteSpace=wrap;html=1;strokeColor:#000000;strokeWidth=2;fillColor:#E2EFDA;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="740" y="300" width="130" height="100" as="geometry"/>
+        </mxCell>
+        <mxCell id="attr3" value="estado\nBOOLEAN\nTRUE" style="ellipse;whiteSpace=wrap;html=1;strokeColor:#000000;strokeWidth=2;fillColor:#E2EFDA;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="920" y="300" width="130" height="100" as="geometry"/>
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="1" source="entity" target="pk1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="1" source="entity" target="attr1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="1" source="entity" target="cand1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e4" edge="1" parent="1" source="entity" target="attr2">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e5" edge="1" parent="1" source="entity" target="attr3">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="cat2_dea1" name="CAT2.1 - DEA CARGO">
+    <mxGraphModel dx="1400" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="900">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="title" value="CATEGORÍA 2: RECURSOS HUMANOS Y PERSONAL&#xa;DEA - DIAGRAMA ENTIDAD-ATRIBUTO: CARGO" style="text;html=1;strokeColor=none;fillColor=none;fontSize=16;fontStyle=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="100" y="20" width="1200" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="entity" value="CARGO" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#000000;strokeWidth=3;fillColor=#E1D5E7;fontSize=16;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="550" y="150" width="300" height="80" as="geometry"/>
+        </mxCell>
+        <mxCell id="pk1" value="🔑 id_cargo\nINT (21)\n[PK]" style="ellipse;whiteSpace=wrap;html=1;strokeColor:#000000;strokeWidth=2;fillColor:#FFF2CC;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="250" y="300" width="130" height="100" as="geometry"/>
+        </mxCell>
+        <mxCell id="attr1" value="nombre\nVARCHAR(80)\nGerente de ventas" style="ellipse;whiteSpace=wrap;html=1;strokeColor:#000000;strokeWidth=2;fillColor:#E2EFDA;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="430" y="300" width="130" height="100" as="geometry"/>
+        </mxCell>
+        <mxCell id="attr2" value="descripcion\nTEXT\nCoordin ventas" style="ellipse;whiteSpace=wrap;html=1;strokeColor:#000000;strokeWidth=2;fillColor:#E2EFDA;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="610" y="300" width="130" height="100" as="geometry"/>
+        </mxCell>
+        <mxCell id="attr3" value="estado\nBOOLEAN\nTRUE" style="ellipse;whiteSpace=wrap;html=1;strokeColor:#000000;strokeWidth=2;fillColor:#E2EFDA;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="790" y="300" width="130" height="100" as="geometry"/>
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="1" source="entity" target="pk1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="1" source="entity" target="attr1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="1" source="entity" target="attr2">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e4" edge="1" parent="1" source="entity" target="attr3">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="cat2_dea2" name="CAT2.2 - DEA EMPLEADO">
+    <mxGraphModel dx="1400" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="900">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="title" value="CATEGORÍA 2: RECURSOS HUMANOS Y PERSONAL&#xa;DEA - DIAGRAMA ENTIDAD-ATRIBUTO: EMPLEADO" style="text;html=1;strokeColor=none;fillColor=none;fontSize=16;fontStyle=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="100" y="20" width="1200" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="entity" value="EMPLEADO" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#000000;strokeWidth=3;fillColor:#E1D5E7;fontSize=16;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="520" y="150" width="300" height="80" as="geometry"/>
+        </mxCell>
+        <mxCell id="pk1" value="🔑 id_empleado\nINT (6001)\n[PK]" style="ellipse;whiteSpace=wrap;html=1;strokeColor:#000000;strokeWidth=2;fillColor:#FFF2CC;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="50" y="300" width="130" height="100" as="geometry"/>
+        </mxCell>
+        <mxCell id="attr1" value="nombres\nVARCHAR(80)\nJosé" style="ellipse;whiteSpace=wrap;html=1;strokeColor:#000000;strokeWidth=2;fillColor:#E2EFDA;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="210" y="300" width="130" height="100" as="geometry"/>
+        </mxCell>
+        <mxCell id="attr2" value="apellidos\nVARCHAR(80)\nTorres" style="ellipse;whiteSpace=wrap;html=1;strokeColor:#000000;strokeWidth=2;fillColor:#E2EFDA;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="370" y="300" width="130" height="100" as="geometry"/>
+        </mxCell>
+        <mxCell id="fk1" value="🔗 id_cargo\nINT\n[FK]" style="ellipse;whiteSpace=wrap;html=1;strokeColor:#E74C3C;strokeWidth=2;fillColor:#FADBD8;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="530" y="300" width="130" height="100" as="geometry"/>
+        </mxCell>
+        <mxCell id="fk2" value="🔗 id_sucursal\nINT\n[FK]" style="ellipse;whiteSpace=wrap;html=1;strokeColor:#E74C3C;strokeWidth=2;fillColor:#FADBD8;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="690" y="300" width="130" height="100" as="geometry"/>
+        </mxCell>
+        <mxCell id="attr3" value="salario_base\nDECIMAL(10,2)\n800.00" style="ellipse;whiteSpace=wrap;html=1;strokeColor:#000000;strokeWidth=2;fillColor:#E2EFDA;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="850" y="300" width="130" height="100" as="geometry"/>
+        </mxCell>
+        <mxCell id="attr4" value="estado\nBOOLEAN\nTRUE" style="ellipse;whiteSpace=wrap;html=1;strokeColor:#000000;strokeWidth=2;fillColor:#E2EFDA;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="1010" y="300" width="130" height="100" as="geometry"/>
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="1" source="entity" target="pk1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="1" source="entity" target="attr1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="1" source="entity" target="attr2">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e4" edge="1" parent="1" source="entity" target="fk1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e5" edge="1" parent="1" source="entity" target="fk2">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e6" edge="1" parent="1" source="entity" target="attr3">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e7" edge="1" parent="1" source="entity" target="attr4">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="cat2_dea3" name="CAT2.3 - DEA VENDEDOR">
+    <mxGraphModel dx="1400" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="900">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="title" value="CATEGORÍA 2: RECURSOS HUMANOS Y PERSONAL&#xa;DEA - DIAGRAMA ENTIDAD-ATRIBUTO: VENDEDOR" style="text;html=1;strokeColor=none;fillColor=none;fontSize=16;fontStyle=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="100" y="20" width="1200" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="entity" value="VENDEDOR" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#000000;strokeWidth=3;fillColor:#E1D5E7;fontSize=16;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="520" y="150" width="300" height="80" as="geometry"/>
+        </mxCell>
+        <mxCell id="pk1" value="🔑 id_vendedor\nINT (7001)\n[PK]" style="ellipse;whiteSpace=wrap;html=1;strokeColor:#000000;strokeWidth=2;fillColor:#FFF2CC;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="150" y="300" width="130" height="100" as="geometry"/>
+        </mxCell>
+        <mxCell id="fk1" value="🔗 id_empleado\nINT (6001)\n[FK]" style="ellipse;whiteSpace=wrap;html=1;strokeColor:#E74C3C;strokeWidth=2;fillColor:#FADBD8;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="310" y="300" width="130" height="100" as="geometry"/>
+        </mxCell>
+        <mxCell id="attr1" value="comision\nDECIMAL(5,2)\n5.00" style="ellipse;whiteSpace=wrap;html=1;strokeColor:#000000;strokeWidth=2;fillColor:#E2EFDA;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="470" y="300" width="130" height="100" as="geometry"/>
+        </mxCell>
+        <mxCell id="attr2" value="meta_ventas\nDECIMAL(12,2)\n5000.00" style="ellipse;whiteSpace=wrap;html=1;strokeColor:#000000;strokeWidth=2;fillColor:#E2EFDA;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="630" y="300" width="130" height="100" as="geometry"/>
+        </mxCell>
+        <mxCell id="attr3" value="estado\nBOOLEAN\nTRUE" style="ellipse;whiteSpace=wrap;html=1;strokeColor:#000000;strokeWidth=2;fillColor:#E2EFDA;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="790" y="300" width="130" height="100" as="geometry"/>
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="1" source="entity" target="pk1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="1" source="entity" target="fk1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="1" source="entity" target="attr1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e4" edge="1" parent="1" source="entity" target="attr2">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e5" edge="1" parent="1" source="entity" target="attr3">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="cat2_dea4" name="CAT2.4 - DEA NÓMINA">
+    <mxGraphModel dx="1400" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="900">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="title" value="CATEGORÍA 2: RECURSOS HUMANOS Y PERSONAL&#xa;DEA - DIAGRAMA ENTIDAD-ATRIBUTO: NÓMINA" style="text;html=1;strokeColor=none;fillColor=none;fontSize=16;fontStyle=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="100" y="20" width="1200" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="entity" value="NÓMINA" style="rounded=1;whiteSpace=wrap;html=1;strokeColor:#000000;strokeWidth=3;fillColor:#E1D5E7;fontSize=16;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="520" y="150" width="300" height="80" as="geometry"/>
+        </mxCell>
+        <mxCell id="pk1" value="🔑 id_nomina\nINT (9001)\n[PK]" style="ellipse;whiteSpace=wrap;html=1;strokeColor:#000000;strokeWidth=2;fillColor:#FFF2CC;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="50" y="300" width="130" height="100" as="geometry"/>
+        </mxCell>
+        <mxCell id="attr1" value="periodo\nDATE\n2026-09-01" style="ellipse;whiteSpace=wrap;html=1;strokeColor:#000000;strokeWidth=2;fillColor:#E2EFDA;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="210" y="300" width="130" height="100" as="geometry"/>
+        </mxCell>
+        <mxCell id="fk1" value="🔗 id_empleado\nINT\n[FK]" style="ellipse;whiteSpace=wrap;html=1;strokeColor:#E74C3C;strokeWidth=2;fillColor:#FADBD8;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="370" y="300" width="130" height="100" as="geometry"/>
+        </mxCell>
+        <mxCell id="attr2" value="salario_bruto\nDECIMAL(12,2)\n1200.00" style="ellipse;whiteSpace=wrap;html=1;strokeColor:#000000;strokeWidth=2;fillColor:#E2EFDA;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="530" y="300" width="130" height="100" as="geometry"/>
+        </mxCell>
+        <mxCell id="attr3" value="descuentos\nDECIMAL(12,2)\n160.00" style="ellipse;whiteSpace=wrap;html=1;strokeColor:#000000;strokeWidth=2;fillColor=#E2EFDA;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="690" y="300" width="130" height="100" as="geometry"/>
+        </mxCell>
+        <mxCell id="attr4" value="salario_neto\nDECIMAL(12,2)\n1040.00" style="ellipse;whiteSpace=wrap;html=1;strokeColor:#000000;strokeWidth=2;fillColor:#E2EFDA;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="850" y="300" width="130" height="100" as="geometry"/>
+        </mxCell>
+        <mxCell id="attr5" value="estado\nBOOLEAN\nTRUE" style="ellipse;whiteSpace=wrap;html=1;strokeColor:#000000;strokeWidth=2;fillColor:#E2EFDA;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="1010" y="300" width="130" height="100" as="geometry"/>
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="1" source="entity" target="pk1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="1" source="entity" target="attr1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="1" source="entity" target="fk1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e4" edge="1" parent="1" source="entity" target="attr2">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e5" edge="1" parent="1" source="entity" target="attr3">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e6" edge="1" parent="1" source="entity" target="attr4">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e7" edge="1" parent="1" source="entity" target="attr5">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="cat2_dea5" name="CAT2.5 - DEA DESCUENTO NÓMINA">
+    <mxGraphModel dx="1400" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="900">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="title" value="CATEGORÍA 2: RECURSOS HUMANOS Y PERSONAL&#xa;DEA - DIAGRAMA ENTIDAD-ATRIBUTO: DESCUENTO DE NÓMINA" style="text;html=1;strokeColor=none;fillColor=none;fontSize=16;fontStyle=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="80" y="20" width="1240" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="entity" value="DESCUENTO DE NÓMINA" style="rounded=1;whiteSpace=wrap;html=1;strokeColor:#000000;strokeWidth=3;fillColor=#D5B5D5;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="480" y="150" width="350" height="80" as="geometry"/>
+        </mxCell>
+        <mxCell id="pk1" value="🔑 id_descuento_nomina\nINT (9101)\n[PK]" style="ellipse;whiteSpace=wrap;html=1;strokeColor:#000000;strokeWidth=2;fillColor:#FFF2CC;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="150" y="300" width="130" height="100" as="geometry"/>
+        </mxCell>
+        <mxCell id="fk1" value="🔗 id_nomina\nINT (9001)\n[FK]" style="ellipse;whiteSpace=wrap;html=1;strokeColor:#E74C3C;strokeWidth=2;fillColor:#FADBD8;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="310" y="300" width="130" height="100" as="geometry"/>
+        </mxCell>
+        <mxCell id="attr1" value="concepto\nVARCHAR(80)\nSeguro" style="ellipse;whiteSpace=wrap;html=1;strokeColor:#000000;strokeWidth=2;fillColor:#E2EFDA;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="470" y="300" width="130" height="100" as="geometry"/>
+        </mxCell>
+        <mxCell id="attr2" value="valor\nDECIMAL(10,2)\n80.00" style="ellipse;whiteSpace=wrap;html=1;strokeColor:#000000;strokeWidth=2;fillColor:#E2EFDA;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="630" y="300" width="130" height="100" as="geometry"/>
+        </mxCell>
+        <mxCell id="attr3" value="estado\nBOOLEAN\nTRUE" style="ellipse;whiteSpace=wrap;html=1;strokeColor:#000000;strokeWidth=2;fillColor:#E2EFDA;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="790" y="300" width="130" height="100" as="geometry"/>
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="1" source="entity" target="pk1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="1" source="entity" target="fk1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="1" source="entity" target="attr1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e4" edge="1" parent="1" source="entity" target="attr2">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e5" edge="1" parent="1" source="entity" target="attr3">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="cat2_dea6" name="CAT2.6 - DEA IMPUESTO NÓMINA">
+    <mxGraphModel dx="1400" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="900">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="title" value="CATEGORÍA 2: RECURSOS HUMANOS Y PERSONAL&#xa;DEA - DIAGRAMA ENTIDAD-ATRIBUTO: IMPUESTO DE NÓMINA" style="text;html=1;strokeColor=none;fillColor=none;fontSize=16;fontStyle=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="80" y="20" width="1240" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="entity" value="IMPUESTO DE NÓMINA" style="rounded=1;whiteSpace=wrap;html=1;strokeColor:#000000;strokeWidth=3;fillColor:#D5B5D5;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="480" y="150" width="350" height="80" as="geometry"/>
+        </mxCell>
+        <mxCell id="pk1" value="🔑 id_impuesto_nomina\nINT (9201)\n[PK]" style="ellipse;whiteSpace=wrap;html=1;strokeColor:#000000;strokeWidth=2;fillColor:#FFF2CC;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="150" y="300" width="130" height="100" as="geometry"/>
+        </mxCell>
+        <mxCell id="fk1" value="🔗 id_nomina\nINT (9001)\n[FK]" style="ellipse;whiteSpace=wrap;html=1;strokeColor:#E74C3C;strokeWidth=2;fillColor:#FADBD8;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="310" y="300" width="130" height="100" as="geometry"/>
+        </mxCell>
+        <mxCell id="attr1" value="concepto\nVARCHAR(80)\nIESS" style="ellipse;whiteSpace=wrap;html=1;strokeColor:#000000;strokeWidth=2;fillColor:#E2EFDA;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="470" y="300" width="130" height="100" as="geometry"/>
+        </mxCell>
+        <mxCell id="attr2" value="valor\nDECIMAL(10,2)\n120.00" style="ellipse;whiteSpace=wrap;html=1;strokeColor:#000000;strokeWidth=2;fillColor:#E2EFDA;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="630" y="300" width="130" height="100" as="geometry"/>
+        </mxCell>
+        <mxCell id="attr3" value="estado\nBOOLEAN\nTRUE" style="ellipse;whiteSpace=wrap;html=1;strokeColor:#000000;strokeWidth=2;fillColor:#E2EFDA;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="790" y="300" width="130" height="100" as="geometry"/>
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="1" source="entity" target="pk1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="1" source="entity" target="fk1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="1" source="entity" target="attr1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e4" edge="1" parent="1" source="entity" target="attr2">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e5" edge="1" parent="1" source="entity" target="attr3">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="cat2_dea7" name="CAT2.7 - DEA DEPARTAMENTO NÓMINA">
+    <mxGraphModel dx="1400" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="900">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="title" value="CATEGORÍA 2: RECURSOS HUMANOS Y PERSONAL&#xa;DEA - DIAGRAMA ENTIDAD-ATRIBUTO: DEPARTAMENTO NÓMINA" style="text;html=1;strokeColor=none;fillColor=none;fontSize=16;fontStyle=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="80" y="20" width="1240" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="entity" value="DEPARTAMENTO NÓMINA" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#000000;strokeWidth=3;fillColor=#D5B5D5;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="470" y="150" width="370" height="80" as="geometry"/>
+        </mxCell>
+        <mxCell id="pk1" value="🔑 id_departamento_nomina\nINT (9301)\n[PK]" style="ellipse;whiteSpace=wrap;html=1;strokeColor:#000000;strokeWidth=2;fillColor:#FFF2CC;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="150" y="300" width="130" height="100" as="geometry"/>
+        </mxCell>
+        <mxCell id="attr1" value="nombre\nVARCHAR(80)\nRRHH" style="ellipse;whiteSpace=wrap;html=1;strokeColor:#000000;strokeWidth=2;fillColor:#E2EFDA;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="310" y="300" width="130" height="100" as="geometry"/>
+        </mxCell>
+        <mxCell id="attr2" value="descripcion\nTEXT\nGestión colaborador" style="ellipse;whiteSpace=wrap;html=1;strokeColor:#000000;strokeWidth=2;fillColor:#E2EFDA;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="470" y="300" width="130" height="100" as="geometry"/>
+        </mxCell>
+        <mxCell id="attr3" value="estado\nBOOLEAN\nTRUE" style="ellipse;whiteSpace=wrap;html=1;strokeColor:#000000;strokeWidth=2;fillColor:#E2EFDA;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="630" y="300" width="130" height="100" as="geometry"/>
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="1" source="entity" target="pk1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="1" source="entity" target="attr1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="1" source="entity" target="attr2">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e4" edge="1" parent="1" source="entity" target="attr3">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="legend" name="LEYENDA Y REFERENCIAS">
+    <mxGraphModel dx="1400" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="900">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="title" value="LEYENDA - SIMBOLOGÍA UTILIZADA" style="text;html=1;strokeColor=none;fillColor=none;fontSize=20;fontStyle=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="200" y="30" width="1000" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="l1" value="🔑 [PK] - CLAVE PRIMARIA (Primary Key)" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=none;fillColor=#FFF2CC;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="150" y="130" width="1100" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="l2" value="🔗 [FK] - CLAVE FORÁNEA (Foreign Key)" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=none;fillColor=#FADBD8;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="150" y="200" width="1100" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="l3" value="* [CANDIDATA] - CLAVE ÚNICA / CANDIDATA" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=none;fillColor=#D5F4E6;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="150" y="270" width="1100" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="l4" value="Atributo Regular (Amarillo)" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=none;fillColor=#E2EFDA;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="150" y="340" width="1100" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="l5" value="ENTIDAD (Centro - Rectángulo redondeado)" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#000000;strokeWidth=3;fillColor=#E1D5E7;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="150" y="410" width="1100" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="note" value="ESTRUCTURA DEL ARCHIVO:\n- CAT 1: 4 diagramas (Sucursal, Ciudad, Usuario, Provincia)&#xa;- CAT 2: 7 diagramas (Cargo, Empleado, Vendedor, Nómina, Descuento, Impuesto, Dpto.)&#xa;- CAT 3: 8 diagramas (Categoría, Marca, Producto, Unidad, Almacén, Transferencia, Grupo, Dpto.)&#xa;- CAT 4: 5 diagramas (Cliente, Cotización, Factura, Devolución, Entrega)&#xa;- CAT 5: 4 diagramas (Proveedor, Orden de Compra, Compra, Devolución)&#xa;- CAT 6: 6 diagramas (CxC, Nota Cr. CxC, Nota Db. CxC, CxP, Nota Cr. CxP, Nota Db. CxP)&#xa;- CAT 7: 4 diagramas (Caja, Apertura, Cierre, Recibo)&#xa;- CAT 8: 8 diagramas (Banco, Cuenta, Depósito, Cheque, Transferencia, Nota Db., Nota Cr., Conciliación)&#xa;&#xa;TOTAL: 46 DIAGRAMAS DEA" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F0F0F0;fontSize=12;align=left;verticalAlign=top;spacing=10;" vertex="1" parent="1">
+          <mxGeometry x="150" y="500" width="1100" height="300" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
