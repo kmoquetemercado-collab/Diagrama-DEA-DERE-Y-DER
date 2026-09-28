@@ -1,0 +1,260 @@
+<mxfile host="Electron" modified="2026-09-28T07:20:00.000Z" agent="5.0" etag="abc" version="24.0" type="device">
+  <diagram id="diagram1" name="DEA - Diagrama Entidad-Atributo">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="none" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        
+        <!-- ENTIDAD ESTUDIANTE -->
+        <mxCell id="e1" value="ESTUDIANTE" style="shape=rectangle;rounded=0;whiteSpace=wrap;html=1;strokeColor=#000000;strokeWidth=2;fillColor=#E1D5E7;" vertex="1" parent="1">
+          <mxGeometry x="50" y="50" width="150" height="60" as="geometry"/>
+        </mxCell>
+        
+        <!-- ATRIBUTOS ESTUDIANTE -->
+        <mxCell id="a1" value="ID_Estudiante (PK)" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FFF2CC;" vertex="1" parent="1">
+          <mxGeometry x="80" y="150" width="90" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="a2" value="Nombre" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FFF2CC;" vertex="1" parent="1">
+          <mxGeometry x="30" y="220" width="70" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="a3" value="Apellido" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FFF2CC;" vertex="1" parent="1">
+          <mxGeometry x="130" y="220" width="70" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="a4" value="Email" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FFF2CC;" vertex="1" parent="1">
+          <mxGeometry x="30" y="290" width="70" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="a5" value="Teléfono" style="ellipse;whiteSpace=wrap;html=1;strokeColor:#000000;fillColor=#FFF2CC;" vertex="1" parent="1">
+          <mxGeometry x="130" y="290" width="70" height="40" as="geometry"/>
+        </mxCell>
+        
+        <!-- Conexiones atributos a entidad ESTUDIANTE -->
+        <mxCell id="c1" edge="1" parent="1" source="e1" target="a1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="c2" edge="1" parent="1" source="e1" target="a2">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="c3" edge="1" parent="1" source="e1" target="a3">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="c4" edge="1" parent="1" source="e1" target="a4">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="c5" edge="1" parent="1" source="e1" target="a5">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        
+        <!-- ENTIDAD CURSO -->
+        <mxCell id="e2" value="CURSO" style="shape=rectangle;rounded=0;whiteSpace=wrap;html=1;strokeColor=#000000;strokeWidth=2;fillColor=#E1D5E7;" vertex="1" parent="1">
+          <mxGeometry x="450" y="50" width="150" height="60" as="geometry"/>
+        </mxCell>
+        
+        <!-- ATRIBUTOS CURSO -->
+        <mxCell id="a6" value="ID_Curso (PK)" style="ellipse;whiteSpace=wrap;html=1;strokeColor:#000000;fillColor:#FFF2CC;" vertex="1" parent="1">
+          <mxGeometry x="480" y="150" width="90" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="a7" value="Nombre Curso" style="ellipse;whiteSpace=wrap;html=1;strokeColor:#000000;fillColor=#FFF2CC;" vertex="1" parent="1">
+          <mxGeometry x="430" y="220" width="90" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="a8" value="Descripción" style="ellipse;whiteSpace=wrap;html=1;strokeColor:#000000;fillColor=#FFF2CC;" vertex="1" parent="1">
+          <mxGeometry x="540" y="220" width="90" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="a9" value="Créditos" style="ellipse;whiteSpace=wrap;html=1;strokeColor:#000000;fillColor:#FFF2CC;" vertex="1" parent="1">
+          <mxGeometry x="430" y="290" width="70" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="a10" value="Semestre" style="ellipse;whiteSpace=wrap;html=1;strokeColor:#000000;fillColor:#FFF2CC;" vertex="1" parent="1">
+          <mxGeometry x="540" y="290" width="70" height="40" as="geometry"/>
+        </mxCell>
+        
+        <!-- Conexiones atributos a entidad CURSO -->
+        <mxCell id="c6" edge="1" parent="1" source="e2" target="a6">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="c7" edge="1" parent="1" source="e2" target="a7">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="c8" edge="1" parent="1" source="e2" target="a8">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="c9" edge="1" parent="1" source="e2" target="a9">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="c10" edge="1" parent="1" source="e2" target="a10">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        
+        <!-- Título -->
+        <mxCell id="title" value="Diagrama Entidad-Atributo (DEA)" style="text;fontSize=18;fontStyle=1;fillColor=none;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="200" y="10" width="300" height="30" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  
+  <diagram id="diagram2" name="DER - Diagrama Entidad-Relación">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="none" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        
+        <!-- ENTIDAD ESTUDIANTE -->
+        <mxCell id="e1" value="ESTUDIANTE" style="shape=rectangle;rounded=0;whiteSpace=wrap;html=1;strokeColor=#000000;strokeWidth=2;fillColor=#D4E6F1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="100" width="120" height="60" as="geometry"/>
+        </mxCell>
+        
+        <!-- ENTIDAD CURSO -->
+        <mxCell id="e2" value="CURSO" style="shape=rectangle;rounded=0;whiteSpace=wrap;html=1;strokeColor=#000000;strokeWidth=2;fillColor=#D4E6F1;" vertex="1" parent="1">
+          <mxGeometry x="450" y="100" width="120" height="60" as="geometry"/>
+        </mxCell>
+        
+        <!-- RELACIÓN INSCRIPCIÓN -->
+        <mxCell id="r1" value="INSCRIPCIÓN" style="rhombus;whiteSpace=wrap;html=1;strokeColor=#000000;strokeWidth=2;fillColor=#FCE4D6;" vertex="1" parent="1">
+          <mxGeometry x="260" y="100" width="120" height="60" as="geometry"/>
+        </mxCell>
+        
+        <!-- Conexión ESTUDIANTE - INSCRIPCIÓN -->
+        <mxCell id="rel1" edge="1" parent="1" source="e1" target="r1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="170" y="130" as="sourcePoint"/>
+            <mxPoint x="260" y="130" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- Conexión INSCRIPCIÓN - CURSO -->
+        <mxCell id="rel2" edge="1" parent="1" source="r1" target="e2">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="380" y="130" as="sourcePoint"/>
+            <mxPoint x="450" y="130" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- Etiquetas de cardinalidad -->
+        <mxCell id="card1" value="N" style="text;fontSize=14;fontStyle=1;fillColor=none;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="190" y="115" width="30" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="card2" value="M" style="text;fontSize=14;fontStyle=1;fillColor=none;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="390" y="115" width="30" height="30" as="geometry"/>
+        </mxCell>
+        
+        <!-- ENTIDAD PROFESOR -->
+        <mxCell id="e3" value="PROFESOR" style="shape=rectangle;rounded=0;whiteSpace=wrap;html=1;strokeColor=#000000;strokeWidth=2;fillColor=#D4E6F1;" vertex="1" parent="1">
+          <mxGeometry x="450" y="250" width="120" height="60" as="geometry"/>
+        </mxCell>
+        
+        <!-- RELACIÓN ENSEÑA -->
+        <mxCell id="r2" value="ENSEÑA" style="rhombus;whiteSpace=wrap;html=1;strokeColor=#000000;strokeWidth=2;fillColor=#FCE4D6;" vertex="1" parent="1">
+          <mxGeometry x="260" y="250" width="120" height="60" as="geometry"/>
+        </mxCell>
+        
+        <!-- Conexión PROFESOR - ENSEÑA -->
+        <mxCell id="rel3" edge="1" parent="1" source="e3" target="r2">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="450" y="280" as="sourcePoint"/>
+            <mxPoint x="380" y="280" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- Conexión ENSEÑA - CURSO -->
+        <mxCell id="rel4" edge="1" parent="1" source="r2" target="e2">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="320" y="250" as="sourcePoint"/>
+            <mxPoint x="510" y="160" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- Etiquetas de cardinalidad -->
+        <mxCell id="card3" value="1" style="text;fontSize=14;fontStyle=1;fillColor=none;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="390" y="265" width="30" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="card4" value="N" style="text;fontSize=14;fontStyle=1;fillColor=none;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="390" y="200" width="30" height="30" as="geometry"/>
+        </mxCell>
+        
+        <!-- Título -->
+        <mxCell id="title" value="Diagrama Entidad-Relación (DER)" style="text;fontSize=18;fontStyle=1;fillColor=none;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="200" y="10" width="300" height="30" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  
+  <diagram id="diagram3" name="DERE - Modelo Entidad-Relación Extendido">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="none" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        
+        <!-- ENTIDAD PADRE: PERSONA -->
+        <mxCell id="e1" value="PERSONA" style="shape=rectangle;rounded=0;whiteSpace=wrap;html=1;strokeColor=#000000;strokeWidth=2;fillColor=#E8DAEF;" vertex="1" parent="1">
+          <mxGeometry x="300" y="50" width="120" height="60" as="geometry"/>
+        </mxCell>
+        
+        <!-- ESPECIALIZACIÓN: ESTUDIANTE -->
+        <mxCell id="e2" value="ESTUDIANTE" style="shape=rectangle;rounded=0;whiteSpace=wrap;html=1;strokeColor=#000000;strokeWidth=2;fillColor=#D4E6F1;" vertex="1" parent="1">
+          <mxGeometry x="100" y="200" width="120" height="60" as="geometry"/>
+        </mxCell>
+        
+        <!-- ESPECIALIZACIÓN: PROFESOR -->
+        <mxCell id="e3" value="PROFESOR" style="shape=rectangle;rounded=0;whiteSpace=wrap;html=1;strokeColor=#000000;strokeWidth=2;fillColor=#D4E6F1;" vertex="1" parent="1">
+          <mxGeometry x="300" y="200" width="120" height="60" as="geometry"/>
+        </mxCell>
+        
+        <!-- ESPECIALIZACIÓN: ADMINISTRADOR -->
+        <mxCell id="e4" value="ADMINISTRADOR" style="shape=rectangle;rounded=0;whiteSpace=wrap;html=1;strokeColor=#000000;strokeWidth=2;fillColor=#D4E6F1;" vertex="1" parent="1">
+          <mxGeometry x="500" y="200" width="120" height="60" as="geometry"/>
+        </mxCell>
+        
+        <!-- Triángulo de HERENCIA -->
+        <mxCell id="heir" value="ISA" style="shape=triangle;perimeter=trianglePerimeter;whiteSpace=wrap;html=1;rotation=180;strokeColor=#000000;strokeWidth=2;fillColor=#FFE699;" vertex="1" parent="1">
+          <mxGeometry x="335" y="130" width="50" height="40" as="geometry"/>
+        </mxCell>
+        
+        <!-- Conexión PERSONA - ISA -->
+        <mxCell id="rel1" edge="1" parent="1" source="e1" target="heir">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        
+        <!-- Conexión ISA - ESTUDIANTE -->
+        <mxCell id="rel2" edge="1" parent="1" source="heir" target="e2">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        
+        <!-- Conexión ISA - PROFESOR -->
+        <mxCell id="rel3" edge="1" parent="1" source="heir" target="e3">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        
+        <!-- Conexión ISA - ADMINISTRADOR -->
+        <mxCell id="rel4" edge="1" parent="1" source="heir" target="e4">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        
+        <!-- ENTIDAD CURSO -->
+        <mxCell id="e5" value="CURSO" style="shape=rectangle;rounded=0;whiteSpace=wrap;html=1;strokeColor=#000000;strokeWidth=2;fillColor=#D4E6F1;" vertex="1" parent="1">
+          <mxGeometry x="300" y="350" width="120" height="60" as="geometry"/>
+        </mxCell>
+        
+        <!-- RELACIÓN ENTIDAD DÉBIL: CALIFICACIÓN (depende de ESTUDIANTE y CURSO) -->
+        <mxCell id="e6" value="CALIFICACIÓN" style="shape=rectangle;rounded=0;whiteSpace=wrap;html=1;strokeColor=#000000;strokeWidth=3;fillColor=#F4CCCC;" vertex="1" parent="1">
+          <mxGeometry x="300" y="480" width="120" height="60" as="geometry"/>
+        </mxCell>
+        
+        <!-- Título -->
+        <mxCell id="title" value="Modelo Entidad-Relación Extendido (DERE)" style="text;fontSize=18;fontStyle=1;fillColor=none;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="200" y="10" width="300" height="30" as="geometry"/>
+        </mxCell>
+        
+        <!-- Leyenda -->
+        <mxCell id="legend1" value="Entidad Fuerte" style="text;fontSize=11;fillColor=none;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="50" y="400" width="80" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="legend2" value="Entidad Débil" style="text;fontSize=11;fillColor=none;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="50" y="430" width="80" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="legend3" value="Relación" style="text;fontSize=11;fillColor=none;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="50" y="460" width="80" height="20" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
